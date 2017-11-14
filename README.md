@@ -87,3 +87,18 @@ This is the release version of chisel-template. If you have bug fixes or
 changes you would like to see incorporated in this repo, please checkout
 the master branch and submit pull requests against it.
 
+### Where to write and run programs on Chisel?
+I am taking the example of MatMultiplication.
+1. Write the source code in the folder src/main/scala/MatMultiplication (Feel free to make your own directory for the project)
+2. Write the test bench with the source code. (Refer src/main/scala/MatMultiplication/MatMult.scala)
+3. To run the configuation, go the the root directory and follow the below format - 
+  ```
+  sbt "runMain packagename.classname"
+  ```
+  For Matrix Multiplication- 
+  ```
+  sbt "runMain matmult.MatMult"
+  ```
+4. Look at the logs to troubleshoot any possible errors
+  ```
+  
